@@ -4,23 +4,23 @@ import CardList from '../components/CardList'
 import Scroll from '../components/Scroll'
 import SearchBox from '../components/SearchBox';
 import ErrorBoundary from '../components/ErrorBoundry';
-
+import {robots} from '../robots';
 
 class App extends Component { 
     constructor(){
         super();
         this.state ={
-            robots: [ ],
+            robots: robots,
             searchfield: ""
         }
     }
 
-    //  Make the http request
+    /*//  Make the http request
     componentDidMount(){
         fetch("http://jsonplaceholder.typicode.com/users")
         .then(response => response.json() )
         .then(users => {this.setState({robots:users})});
-    }
+    }*/
 
 
     // Search change function
